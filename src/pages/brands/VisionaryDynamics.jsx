@@ -5,7 +5,7 @@ import {
   FaUsers, FaBrain, FaCogs, FaBullseye, FaTrophy,
   FaMedal, FaHandshake, FaClock, FaSearch
 } from "react-icons/fa";
-import vdImg from "../../assets/images/VisionaryDynamics.jpg";
+import vdImg from "../../assets/images/visionarydynamics.jpg";
 import vdLogo from "../../assets/images/VD.jpg"; // Main logo image
 
 const fadeUp = {
