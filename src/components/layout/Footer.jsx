@@ -67,7 +67,7 @@ const Footer = () => {
 
             <div className="flex items-start gap-3">
               <FaPhone className="mt-1 text-[#38BDF8]" />
-              <span>+91 7897830124</span>
+              <span>+91 9217358338</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-[#38BDF8]" />
               <span>
-                B-810, Tower-4, NX-One, TechZone-IV, Greater Noida West
+                B-804, Tower-4, NX-One, TechZone-IV, Greater Noida West
               </span>
             </div>
 
