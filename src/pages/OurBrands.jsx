@@ -181,18 +181,7 @@ const OurBrands = () => {
                   ))}
                 </div>
 
-                {/* CTA */}
-                <div className="text-center">
-                  <a
-                    href={brand.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm shadow-md hover:shadow-xl bg-gradient-to-r ${brand.gradient} text-white`}
-                  >
-                    Visit Website
-                    <FaArrowRight className="text-xs" />
-                  </a>
-                </div>
+               
               </div>
             </div>
           </motion.div>

@@ -72,11 +72,12 @@ const Navbar = () => {
       description:
         "We deliver comprehensive business solutions designed to drive efficiency, innovation, and sustainable growth.",
       link: "/services",
-      showExplore: true,
+      showExplore: false,
       links: [
         { name: "Recruitment Consulting", path: "/recruitment" },
-        { name: "Professional Consulting", path: "/professional" },
-        { name: "Business Consulting", path: "/business-consulting" },
+        { name: "Marketing Consulting", path: "/professional" },
+        { name: "Business Analytics", path: "/business-consulting" },
+         { name: "Web Development", path: "/web-development" },
       ],
     },
     brands: {
@@ -85,7 +86,10 @@ const Navbar = () => {
         "We build and manage a diverse portfolio of brands across industries.",
       link: "/brands",
       showExplore: true,
-      links: ["Visionary Dynamics", "Archi", "Polychem"],
+      links: [{ name: "Visionary Dynamics", path: "/vd" },
+        { name: "Polycheme", path: "/polycheme" },
+        { name: "Archi", path: "/archi" },
+        ],
     },
     careers: {
       label: "Careers",

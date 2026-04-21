@@ -15,6 +15,8 @@ import Blog from "./pages/Blog";
 import OurBrands from "./pages/OurBrands";
 import BusinessConsulting from "./pages/BusinessConsulting";
 import ProfessionalConsulting from "./pages/ProfessionalConsulting";
+import Polycheme from "./pages/brands/Polycheme";
+import VisionaryDynamics from "./pages/brands/VisionaryDynamics";
 
 
 // CLIENT DASHBOARD
@@ -59,6 +61,8 @@ function App() {
         <Route path="/business-consulting" element={<BusinessConsulting />} />
         <Route path="/recruitment" element={<RecruitmentConsulting />} />
         <Route path="/professional" element={<ProfessionalConsulting />} />
+        <Route path="/polycheme" element={<Polycheme />} />
+        <Route path="/vd" element={<VisionaryDynamics />} />
 
         {/* ADMIN DASHBOARD */}
         <Route
