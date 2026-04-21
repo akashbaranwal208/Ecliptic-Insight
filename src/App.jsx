@@ -32,9 +32,9 @@ import Employees from "./pages/admin/Employees";
 import Clients from "./pages/admin/Clients";
 
 // AUTH
-import Login from "./pages/LogIn";
 import Signup from "./pages/Signup";
 import RecruitmentConsulting from "./pages/RecruitmentConsulting";
+import Login from "./pages/Login";
 
 function App() {
   return (
