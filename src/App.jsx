@@ -32,8 +32,8 @@ import Employees from "./pages/admin/Employees";
 import Clients from "./pages/admin/Clients";
 
 // AUTH
-import Login from "./pages/LogIn";
-import Signup from "./pages/Singup";
+import { LogIn } from "lucide-react";
+import Signup from "./pages/Signup";
 import RecruitmentConsulting from "./pages/RecruitmentConsulting";
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/brands" element={<OurBrands />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/business-consulting" element={<BusinessConsulting />} />
         <Route path="/recruitment" element={<RecruitmentConsulting />} />
