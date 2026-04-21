@@ -7,7 +7,19 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
+import { Link } from "react-router-dom"; // ✅ IMPORTANT
+
 const Footer = () => {
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About Company", path: "/about" },
+    { name: "Our Business", path: "/business" },
+    { name: "Our Brands", path: "/brands" }, // adjust if different
+    { name: "Contact", path: "/contact" },
+    { name: "Careers", path: "/life" }, // or /careers if exists
+    { name: "Blog", path: "/blog" },
+  ];
+
   return (
     <footer className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-gray-300 pt-16 pb-8 px-6 md:px-16">
 
@@ -32,20 +44,14 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-3 text-sm">
-            {[
-              "Home",
-              "Who We Are",
-              "Our Brands",
-              "Business Consulting",
-              "Contact",
-              "Careers",
-              "Resources",
-            ].map((item, index) => (
-              <li
-                key={index}
-                className="hover:text-[#38BDF8] cursor-pointer transition"
-              >
-                {item}
+            {links.map((item, index) => (
+              <li key={index}>
+                <Link
+                  to={item.path}
+                  className="hover:text-[#38BDF8] transition"
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -79,15 +85,30 @@ const Footer = () => {
             {/* 🔥 Social Icons */}
             <div className="flex gap-4 pt-3 text-lg">
 
-              <a className="hover:text-[#38BDF8] transition cursor-pointer">
+              <a
+                href="https://www.linkedin.com/company/eclipticinsight/posts/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#38BDF8] transition"
+              >
                 <FaLinkedin />
               </a>
 
-              <a className="hover:text-[#38BDF8] transition cursor-pointer">
+              <a
+                href="https://www.instagram.com/ecliptic_insight?igsh=bWNkMXd1dHh5dzd0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#38BDF8] transition"
+              >
                 <FaInstagram />
               </a>
 
-              <a className="hover:text-[#38BDF8] transition cursor-pointer">
+              <a
+                href="https://www.facebook.com/people/Ecliptic-Insight-Ventures/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#38BDF8] transition"
+              >
                 <FaFacebook />
               </a>
 
