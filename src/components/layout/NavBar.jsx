@@ -111,20 +111,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
-      {/* NAVBAR */}
-      <div
-        className={`w-full transition-all duration-300
-        bg-gradient-to-r from-[#7AA2CC] to-[#5C88B5]
-        border-b border-white/20 shadow-sm
-        ${scrolled ? "py-1" : "py-2"}
-        `}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 flex items-center justify-between gap-4">
+  <nav className="fixed top-0 left-0 w-full z-50">
+    {/* NAVBAR */}
+    <div
+      className={`w-full transition-all duration-300
+      bg-gradient-to-r from-[#7AA2CC] to-[#5C88B5]
+      border-b border-white/20 shadow-sm
+      ${scrolled ? "py-1.5" : "py-2.5"}
+      `}
+    >
+      <div className="w-full px-4 sm:px-6 lg:px-10 flex items-center">
 
-          {/* LOGO - Fixed size, no scroll shrink */}
-          <Link to="/" className="flex-shrink-0">
-            <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-white p-1.5 flex items-center justify-center shadow-md hover:scale-105 transition-all duration-300">
+        {/* LEFT - LOGO */}
+        <div className="flex-shrink-0">
+          <Link to="/">
+            <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-white p-1 flex items-center justify-center shadow-md hover:scale-105 transition">
               <img
                 src={logo}
                 alt="logo"
@@ -132,28 +133,30 @@ const Navbar = () => {
               />
             </div>
           </Link>
+        </div>
 
-          {/* MENU */}
-          <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-[15px] font-medium text-[#0F172A]">
+        {/* CENTER - MENU */}
+        <div className="flex-1 flex justify-center">
+          <ul className="hidden md:flex items-center gap-8 lg:gap-10 text-[15px] font-medium text-[#0F172A]">
 
-  {/* ✅ HOME BUTTON */}
-  <li className="relative group">
-    <Link
-      to="/"
-      className={`flex items-center gap-1 hover:text-[#1E40AF] transition py-1.5 ${
-        location.pathname === "/" ? "text-[#1E40AF]" : ""
-      }`}
-    >
-      Home
-    </Link>
+            {/* HOME */}
+            <li className="relative group">
+              <Link
+                to="/"
+                className={`hover:text-[#1E40AF] transition ${
+                  location.pathname === "/" ? "text-[#1E40AF]" : ""
+                }`}
+              >
+                Home
+              </Link>
+              <span className="absolute left-0 -bottom-1.5 h-[2px] w-0 bg-[#1E40AF] group-hover:w-full transition-all duration-300"></span>
+            </li>
 
-    {/* underline */}
-    <span className="absolute left-0 -bottom-1.5 h-[2px] w-0 bg-[#1E40AF] group-hover:w-full transition-all duration-300"></span>
-  </li>
+            {/* OTHER MENUS */}
             {Object.keys(menuData).map((key) => (
               <li
                 key={key}
-                className="relative cursor-pointer group flex items-center gap-1 hover:text-[#1E40AF] transition py-1.5"
+                className="relative cursor-pointer group flex items-center gap-1 hover:text-[#1E40AF] transition"
                 onMouseEnter={() => handleMouseEnter(key)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -164,66 +167,67 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+        </div>
 
-          {/* RIGHT SIDE */}
-          <div className="hidden md:flex items-center gap-4 lg:gap-6 ml-auto">
+        {/* RIGHT SIDE */}
+        <div className="hidden md:flex items-center gap-5 lg:gap-6">
 
-            {token ? (
-              <>
-                <span className="text-xs font-medium text-white bg-white/20 px-3 py-1 rounded-md backdrop-blur">
-                  Hello, {name}
-                </span>
+          {token ? (
+            <>
+              <span className="text-xs font-medium text-white bg-white/20 px-3 py-1 rounded-md backdrop-blur">
+                Hello, {name}
+              </span>
 
-                <Link
-                  to={getDashboardRoute()}
-                  className="px-3 py-1 rounded-md bg-blue-600 text-white text-xs hover:bg-blue-700 transition"
-                >
-                  Dashboard
-                </Link>
+              <Link
+                to={getDashboardRoute()}
+                className="px-3 py-1 rounded-md bg-blue-600 text-white text-xs hover:bg-blue-700 transition"
+              >
+                Dashboard
+              </Link>
 
-                <button
-                  onClick={handleLogout}
-                  className="px-3 py-1 rounded-md bg-red-500 text-white text-xs font-medium hover:bg-red-600 transition shadow"
-                >
-                  Logout
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  to="/login"
-                  className="text-xs font-medium text-[#0F172A] hover:text-[#1E40AF] transition px-2 py-1"
-                >
-                  Login
-                </Link>
+              <button
+                onClick={handleLogout}
+                className="px-3 py-1 rounded-md bg-red-500 text-white text-xs font-medium hover:bg-red-600 transition"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="text-xs font-medium text-[#0F172A] hover:text-[#1E40AF] transition"
+              >
+                Login
+              </Link>
 
-                <Link
-                  to="/signup"
-                  className="px-3 py-1 rounded-md bg-gradient-to-r from-[#2563EB] to-[#38BDF8] text-white text-xs font-medium hover:scale-105 transition shadow-md"
-                >
-                  Sign Up
-                </Link>
-              </>
-            )}
+              <Link
+                to="/signup"
+                className="px-3 py-1 rounded-md bg-gradient-to-r from-[#2563EB] to-[#38BDF8] text-white text-xs font-medium hover:scale-105 transition"
+              >
+                Sign Up
+              </Link>
+            </>
+          )}
 
-            {/* CONTACT */}
-            <Link
-              to="/contact"
-              className={`flex items-center gap-1.5 px-3 py-1 rounded-md transition
-              backdrop-blur-md border border-white/30
-              ${
-                location.pathname === "/contact"
-                  ? "bg-white/70 text-[#1E40AF]"
-                  : "bg-white/30 text-[#0F172A] hover:bg-white/60 hover:text-[#1E40AF]"
-              }`}
-            >
-              <FaEnvelope className="text-xs" />
-              <span className="text-xs">Contact</span>
-            </Link>
+          {/* CONTACT */}
+          <Link
+            to="/contact"
+            className={`flex items-center gap-1.5 px-3 py-1 rounded-md transition
+            backdrop-blur-md border border-white/30
+            ${
+              location.pathname === "/contact"
+                ? "bg-white/70 text-[#1E40AF]"
+                : "bg-white/30 text-[#0F172A] hover:bg-white/60 hover:text-[#1E40AF]"
+            }`}
+          >
+            <FaEnvelope className="text-xs" />
+            <span className="text-xs">Contact</span>
+          </Link>
 
-          </div>
         </div>
       </div>
+    </div>
 
       {/* DROPDOWN */}
       {activeMenu && menuData[activeMenu] && (

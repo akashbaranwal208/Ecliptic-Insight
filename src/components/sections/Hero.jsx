@@ -51,14 +51,14 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex items-center min-h-[80vh] md:min-h-screen max-w-6xl px-4 sm:px-6 md:px-10 pt-16 md:pt-20">
+      <div className="relative z-10  flex items-center min-h-[80vh] md:min-h-screen max-w-6xl px-4 sm:px-6 md:px-10 pt-16 md:pt-20">
 
-        <div className="grid w-full grid-cols-12">
+        <div className="grid w-full max-w-[1400px] grid-cols-12">
           <motion.div
             style={{ rotateX, rotateY }}
             initial="hidden"
             animate="show"
-            className="col-span-12 md:col-span-7 lg:col-span-6"
+            className="col-span-12 md:col-span-7 lg:col-span-6 xl:col-span-5"
           >
             <div className="relative overflow-hidden rounded-[28px] border border-white/20 bg-white/5 p-5 sm:p-6 md:p-8 shadow-[0_20px_80px_rgba(0,0,0,0.42)] backdrop-blur-2xl">
 
