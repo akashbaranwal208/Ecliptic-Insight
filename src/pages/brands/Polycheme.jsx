@@ -331,72 +331,7 @@ const Polycheme = () => {
         </div>
       </section>
 
-      {/* WHY POLYCHEME */}
-      <section className="py-24 px-6 md:px-16 overflow-hidden bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600">
-        <div className="absolute inset-0 bg-grid-white/10 bg-[size:50px_50px]"></div>
-        <div className="relative max-w-6xl mx-auto text-center">
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/20 rounded-full mb-5">
-              <FaThumbsUp className="text-white text-xs" />
-              <span className="text-white text-xs font-semibold tracking-wider">WHY US</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Why Polycheme?
-            </h2>
-            <div className="w-20 h-1 bg-white/50 mx-auto rounded-full mb-8"></div>
-            <p className="text-white/95 text-lg max-w-3xl mx-auto leading-relaxed">
-              Our advanced chemical formulation ensures long-lasting protection,
-              superior sealing performance, and unmatched reliability in real-world
-              conditions. Trusted by professionals worldwide.
-            </p>
-
-            {/* Trust indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-              {[
-                { value: "10+", label: "Years of Excellence" },
-                { value: "1M+", label: "Tyres Protected" },
-                { value: "50+", label: "Countries Served" },
-                { value: "99%", label: "Customer Satisfaction" },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="show"
-                  custom={i + 4}
-                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
-                >
-                  <h3 className="text-2xl font-bold text-white">{item.value}</h3>
-                  <p className="text-white/70 text-sm">{item.label}</p>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Explore More Button */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              custom={8}
-              className="mt-12"
-            >
-              <a
-                href={polychemeWebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-white text-blue-600 font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300"
-              >
-                Explore More on Official Website
-                <FaArrowRight className="text-sm" />
-              </a>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+    
 
       {/* FINAL CTA */}
       <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-br from-slate-900 to-slate-800">
