@@ -120,7 +120,7 @@ const Navbar = () => {
         ${scrolled ? "py-1" : "py-2"}
         `}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-8 flex items-center justify-between gap-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 flex items-center justify-between gap-4">
 
           {/* LOGO - Fixed size, no scroll shrink */}
           <Link to="/" className="flex-shrink-0">
@@ -134,7 +134,22 @@ const Navbar = () => {
           </Link>
 
           {/* MENU */}
-          <ul className="hidden md:flex justify-center items-center gap-4 text-[15px] font-medium text-[#0F172A]">
+          <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-[15px] font-medium text-[#0F172A]">
+
+  {/* ✅ HOME BUTTON */}
+  <li className="relative group">
+    <Link
+      to="/"
+      className={`flex items-center gap-1 hover:text-[#1E40AF] transition py-1.5 ${
+        location.pathname === "/" ? "text-[#1E40AF]" : ""
+      }`}
+    >
+      Home
+    </Link>
+
+    {/* underline */}
+    <span className="absolute left-0 -bottom-1.5 h-[2px] w-0 bg-[#1E40AF] group-hover:w-full transition-all duration-300"></span>
+  </li>
             {Object.keys(menuData).map((key) => (
               <li
                 key={key}
@@ -151,7 +166,7 @@ const Navbar = () => {
           </ul>
 
           {/* RIGHT SIDE */}
-          <div className="hidden md:flex justify-end items-center gap-3">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6 ml-auto">
 
             {token ? (
               <>
@@ -217,10 +232,10 @@ const Navbar = () => {
           onMouseEnter={() => clearTimeout(timeoutRef.current)}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="max-w-[1200px] mx-auto px-6 md:px-8">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10">
             <div className="rounded-lg backdrop-blur-xl bg-gradient-to-br from-[#DBEAFE]/95 to-[#BFDBFE]/85 border border-white/40 shadow-lg">
 
-              <div className="px-5 py-5 grid md:grid-cols-2 gap-5">
+              <div className="px-5 py-5 grid grid-cols-1 md:grid-cols-2 gap-5">
 
                 {/* LEFT */}
                 <div className="bg-white/60 p-4 rounded-lg border border-white/30">
@@ -241,7 +256,7 @@ const Navbar = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className="grid sm:grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {menuData[activeMenu]?.links?.map((link, index) => (
                     <Link
                       key={index}

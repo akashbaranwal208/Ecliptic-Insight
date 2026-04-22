@@ -155,60 +155,6 @@ const Archi = () => {
         </div>
       </section>
 
-      {/* ================= SERVICES / CAPABILITIES ================= */}
-      <section className="py-24 px-6 md:px-16 overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-grid-white/5 bg-[size:50px_50px]"></div>
-        <div className="relative max-w-6xl mx-auto">
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            variants={fadeUp}
-            className="text-center mb-12"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 rounded-full mb-5">
-              <FaPalette className="text-amber-400 text-xs" />
-              <span className="text-white/80 text-xs font-semibold tracking-wider">OUR EXPERTISE</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Our Capabilities
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-amber-400 to-orange-400 mx-auto rounded-full"></div>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Architectural Design", icon: <FaDraftingCompass className="text-2xl" />, desc: "Innovative and functional building designs", color: "from-amber-500 to-orange-500" },
-              { title: "Interior Planning", icon: <FaHome className="text-2xl" />, desc: "Beautiful and practical interior spaces", color: "from-purple-500 to-pink-500" },
-              { title: "3D Visualization", icon: <FaCube className="text-2xl" />, desc: "Realistic 3D renderings and walkthroughs", color: "from-green-500 to-emerald-500" },
-              { title: "Urban Planning", icon: <FaCity className="text-2xl" />, desc: "Sustainable city and community planning", color: "from-orange-500 to-red-500" },
-              { title: "Sustainable Design", icon: <FaLeaf className="text-2xl" />, desc: "Eco-friendly and green building solutions", color: "from-indigo-500 to-purple-500" },
-              { title: "Project Consultation", icon: <FaComments className="text-2xl" />, desc: "Expert guidance from concept to completion", color: "from-cyan-500 to-blue-500" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="show"
-                variants={fadeUp}
-                custom={i * 0.1}
-                whileHover={{ y: -8 }}
-                className="group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
-                  style={{ background: `linear-gradient(135deg, ${item.color.split(' ')[1]} 0%, ${item.color.split(' ')[3]} 100%)` }}>
-                </div>
-                <div className="relative p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center mb-4 text-white shadow-lg group-hover:scale-110 transition-transform`}>
-                    {item.icon}
-                  </div>
-                  <h3 className="text-white font-semibold text-lg mb-2">{item.title}</h3>
-                  <p className="text-white/60 text-sm">{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ================= PROCESS ================= */}
       <section className="py-24 px-6 md:px-16 max-w-6xl mx-auto">
         <motion.div
@@ -255,58 +201,7 @@ const Archi = () => {
         </div>
       </section>
 
-      {/* ================= WHY CHOOSE ================= */}
-      <section className="py-24 px-6 md:px-16 overflow-hidden bg-gradient-to-r from-amber-600 via-orange-600 to-amber-600">
-        <div className="absolute inset-0 bg-grid-white/10 bg-[size:50px_50px]"></div>
-        <div className="relative max-w-6xl mx-auto">
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            variants={fadeUp}
-            className="text-center mb-12"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/20 rounded-full mb-5">
-              <FaTrophy className="text-white text-xs" />
-              <span className="text-white text-xs font-semibold tracking-wider">WHY CHOOSE US</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Why Choose Archi
-            </h2>
-            <div className="w-20 h-1 bg-white/50 mx-auto rounded-full"></div>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Innovative Design Thinking", icon: <FaDraftingCompass className="text-2xl" />, desc: "Creative and forward-thinking solutions", color: "from-yellow-500 to-orange-500" },
-              { title: "Client-Centric Approach", icon: <FaUsers className="text-2xl" />, desc: "Your vision is our priority", color: "from-blue-500 to-cyan-500" },
-              { title: "High-Quality Execution", icon: <FaCheckCircle className="text-2xl" />, desc: "Precision and excellence in every project", color: "from-green-500 to-emerald-500" },
-              { title: "Timely Delivery", icon: <FaClock className="text-2xl" />, desc: "On-time project completion", color: "from-purple-500 to-pink-500" },
-              { title: "Experienced Team", icon: <FaUsers className="text-2xl" />, desc: "Skilled professionals with expertise", color: "from-orange-500 to-red-500" },
-              { title: "Sustainable Solutions", icon: <FaLeaf className="text-2xl" />, desc: "Eco-friendly and green designs", color: "from-indigo-500 to-purple-500" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="show"
-                variants={fadeUp}
-                custom={i * 0.1}
-                whileHover={{ y: -5 }}
-                className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300"
-              >
-                <div className="flex items-start gap-4">
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white shadow-lg`}>
-                    {item.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-white font-semibold text-lg mb-1">{item.title}</h3>
-                    <p className="text-white/70 text-sm">{item.desc}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* ================= CTA ================= */}
       <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-br from-slate-900 to-slate-800">
