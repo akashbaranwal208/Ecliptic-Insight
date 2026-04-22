@@ -452,13 +452,13 @@ const BusinessConsulting = () => {
                 <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <FaEnvelope className="text-white text-sm" />
                 </div>
-                <span>connect@yourcompany.com</span>
+                <span>info@eclipticinsight.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-300 group">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <FaPhone className="text-white text-sm" />
                 </div>
-                <span>+91 XXXXXXXX</span>
+                <span>+91 9217358338</span>
               </div>
             </div>
           </motion.div>
