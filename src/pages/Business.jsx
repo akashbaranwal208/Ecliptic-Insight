@@ -184,7 +184,7 @@ const Business = () => {
                   Our Ecosystem
                 </span>
                 <div className="w-1 h-1 rounded-full bg-blue-300/50" />
-                <span className="text-xs text-white/60">Est. 2020</span>
+                
               </motion.div>
 
               {/* Heading */}
