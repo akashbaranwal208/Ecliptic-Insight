@@ -19,6 +19,7 @@ import Polycheme from "./pages/brands/Polycheme";
 import VisionaryDynamics from "./pages/brands/VisionaryDynamics";
 import Archi from "./pages/brands/Archi";
 import WebDevelopment from "./pages/WebDevelopment";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 // CLIENT DASHBOARD
@@ -44,6 +45,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
+
 
       <Routes>
 

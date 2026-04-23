@@ -40,7 +40,7 @@ const Business = () => {
         "IT Consulting",
         "Recruitment Process Outsourcing",
       ],
-      expertise: "15+ Years Experience",
+      expertise: "5+ Years Experience",
       coverage: "Global Reach",
     },
     {
@@ -97,7 +97,7 @@ const Business = () => {
         "Strategic recruitment solutions helping Indian companies build exceptional teams.",
       icon: Users,
       color: "rose",
-      stats: "500+ Hires",
+      stats: "100+ Hires",
       details: [
         "Manpower Consulting",
         "Talent Acquisition",
@@ -150,8 +150,8 @@ const Business = () => {
   return (
     <div className="relative bg-white" ref={targetRef}>
 
-      {/* ================= HERO SECTION - CLEAN TRANSITION ================= */}
-      <div className="relative min-h-[85vh] overflow-hidden">
+      {/* ================= HERO SECTION - WITH PROPER TOP PADDING ================= */}
+      <div className="relative min-h-[90vh] pt-24 md:pt-28 lg:pt-32 overflow-hidden">
         
         {/* Background Image */}
         <motion.div
@@ -193,7 +193,7 @@ const Business = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.15] tracking-tight">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.15] tracking-tight">
                   Our Business
                   <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent mt-3">
                     Ecosystem
@@ -256,7 +256,7 @@ const Business = () => {
               
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
-              Our Protfolio
+              Our Portfolio
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mt-6 rounded-full" />
             <p className="mt-6 text-gray-500 text-lg max-w-2xl mx-auto">

@@ -13,22 +13,24 @@ import polychemeLogo from "../assets/images/polycheme.jpg";
 import vdLogo from "../assets/images/VD.jpg"; // ✅ ADD THIS
 
 const brands = [
+
   {
-    name: "Archi",
-    tagline: "Innovating Modern Architecture",
-    desc: "Archi delivers cutting-edge architectural and design solutions, focusing on sustainability, aesthetics, and functionality. We help businesses and individuals bring their vision to life through modern infrastructure and creative design.",
+    name: "Visionary Dynamics",
+    tagline: "Driving Smart Business Transformation",
+    desc: "Visionary Dynamics empowers businesses with strategic consulting, digital solutions, and scalable systems designed to accelerate growth. From IT infrastructure to marketing and operational optimization, we help organizations build future-ready ecosystems.",
     highlights: [
-      "Sustainable building design",
-      "Modern infrastructure solutions",
-      "Residential & commercial projects"
+      "Digital transformation & IT solutions",
+      "Marketing & growth strategies",
+      "Business process optimization"
     ],
-    industry: "Architecture & Design",
-    logo: archiLogo,
-    link: "https://archi.com",
-    gradient: "from-blue-600 to-cyan-600",
-    lightBg: "bg-blue-50",
-    icon: <FaPalette className="text-blue-600" />
+    industry: "Business Consulting & Technology",
+    logo: vdLogo,
+    link: "https://visionarydynamicsas-axbyczf9cnb8e4a8.eastus-01.azurewebsites.net/",
+    gradient: "from-cyan-600 via-blue-600 to-indigo-600",
+    lightBg: "bg-cyan-50",
+    icon: <FaRocket className="text-cyan-600" />
   },
+
   {
     name: "Polycheme",
     tagline: "Advanced Chemical Solutions",
@@ -45,22 +47,24 @@ const brands = [
     lightBg: "bg-purple-50",
     icon: <FaIndustry className="text-purple-600" />
   },
+
   {
-    name: "Visionary Dynamics",
-    tagline: "Driving Smart Business Transformation",
-    desc: "Visionary Dynamics empowers businesses with strategic consulting, digital solutions, and scalable systems designed to accelerate growth. From IT infrastructure to marketing and operational optimization, we help organizations build future-ready ecosystems.",
+    name: "Archi",
+    tagline: "Innovating Modern Architecture",
+    desc: "Archi delivers cutting-edge architectural and design solutions, focusing on sustainability, aesthetics, and functionality. We help businesses and individuals bring their vision to life through modern infrastructure and creative design.",
     highlights: [
-      "Digital transformation & IT solutions",
-      "Marketing & growth strategies",
-      "Business process optimization"
+      "Sustainable building design",
+      "Modern infrastructure solutions",
+      "Residential & commercial projects"
     ],
-    industry: "Business Consulting & Technology",
-    logo: vdLogo,
-    link: "https://visionarydynamicsas-axbyczf9cnb8e4a8.eastus-01.azurewebsites.net/",
-    gradient: "from-cyan-600 via-blue-600 to-indigo-600",
-    lightBg: "bg-cyan-50",
-    icon: <FaRocket className="text-cyan-600" />
-  }
+    industry: "Architecture & Design",
+    logo: archiLogo,
+    link: "https://archi.com",
+    gradient: "from-blue-600 to-cyan-600",
+    lightBg: "bg-blue-50",
+    icon: <FaPalette className="text-blue-600" />
+  },
+  
 ];
 
 const OurBrands = () => {

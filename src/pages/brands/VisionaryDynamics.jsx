@@ -25,8 +25,8 @@ const VisionaryDynamics = () => {
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
 
-      {/* HERO SECTION - Full screen with fixed positioning */}
-      <section className="relative min-h-screen w-full flex items-center overflow-hidden">
+      {/* HERO SECTION - Full screen with fixed positioning and proper top padding */}
+      <section className="relative min-h-screen w-full flex items-center overflow-hidden pt-24 md:pt-28 lg:pt-32">
         {/* Background Image - Full cover */}
         <div className="absolute inset-0 w-full h-full">
           <img
@@ -352,32 +352,43 @@ const VisionaryDynamics = () => {
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-br from-slate-900 to-slate-800">
+      {/* CTA SECTION - Glassmorphic Design */}
+      <section className="py-24 px-6 md:px-16 text-center relative overflow-hidden">
+        {/* Glass background with blur effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/90 to-slate-900/90 backdrop-blur-3xl"></div>
+        
+        {/* Animated gradient orbs */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-0 w-80 h-80 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-700"></div>
+        
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
-          className="max-w-4xl mx-auto"
+          className="relative z-10 max-w-4xl mx-auto"
         >
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center mx-auto mb-6 shadow-xl">
-            <FaRocket className="text-white text-3xl" />
+          {/* Glass card effect */}
+          <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-12 border border-white/20 shadow-2xl">
+            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500/80 to-cyan-500/80 backdrop-blur-sm flex items-center justify-center mx-auto mb-6 shadow-xl ring-4 ring-white/30">
+              <FaRocket className="text-white text-3xl" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Explore Visionary Growth
+            </h2>
+            <p className="text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+              Discover how Visionary Dynamics can transform your business with innovative strategies and proven expertise.
+            </p>
+            <a
+              href="https://visionarydynamicsas-axbyczf9cnb8e4a8.eastus-01.azurewebsites.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+            >
+              Explore More
+              <FaArrowRight className="text-sm" />
+            </a>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Explore Visionary Growth
-          </h2>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Discover how Visionary Dynamics can transform your business with innovative strategies and proven expertise.
-          </p>
-          <a
-            href="https://visionarydynamicsas-axbyczf9cnb8e4a8.eastus-01.azurewebsites.net/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300"
-          >
-            Explore More
-            <FaArrowRight className="text-sm" />
-          </a>
         </motion.div>
       </section>
     </div>

@@ -107,7 +107,7 @@ const Locations = () => {
                 </div>
                 <div>
                   <p className="text-slate-700 leading-relaxed">
-                    B-810, Tower-4, NX-One, TechZone-IV,<br />
+                    B-804, Tower-4, NX-One, TechZone-IV,<br />
                     Greater Noida West, India
                   </p>
                 </div>
@@ -122,7 +122,7 @@ const Locations = () => {
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-medium">Phone</p>
-                    <p className="text-slate-700 font-medium">+91 7897830124</p>
+                    <p className="text-slate-700 font-medium">+91 9217358338</p>
                   </div>
                 </div>
 

@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { 
   FaDraftingCompass, FaPalette, FaCube, FaCity, 
   FaLeaf, FaComments, FaArrowRight, FaStar, 
@@ -40,8 +40,8 @@ const Archi = () => {
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden">
 
-      {/* ================= HERO - WITH PARALLAX EFFECT ================= */}
-      <section ref={heroRef} className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+      {/* ================= HERO - WITH PARALLAX EFFECT AND PROPER TOP PADDING ================= */}
+      <section ref={heroRef} className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 md:pt-28 lg:pt-32">
         {/* Background Image with Parallax */}
         <motion.div 
           className="absolute inset-0 w-full h-full"

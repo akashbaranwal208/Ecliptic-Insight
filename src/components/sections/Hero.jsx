@@ -76,7 +76,7 @@ const Hero = () => {
                 <motion.p
                   custom={0.08}
                   variants={fadeUp}
-                  className="mb-3 sm:mb-4 text-[11px] sm:text-xs md:text-sm font-medium uppercase tracking-[0.18em] sm:tracking-[0.2em] md:tracking-[0.22em] text-white/90"
+                  className="mb-3 sm:mb-4 text-[11px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.18em] sm:tracking-[0.2em] md:tracking-[0.22em] text-white"
                 >
                   Strategic Growth Partner
                 </motion.p>
@@ -97,7 +97,7 @@ const Hero = () => {
                 <motion.p
                   custom={0.22}
                   variants={fadeUp}
-                  className="mb-5 sm:mb-6 max-w-xl text-base sm:text-lg leading-relaxed sm:leading-8 text-white/95"
+                  className="mb-5 sm:mb-6 max-w-xl text-base sm:text-lg leading-relaxed sm:leading-8 text-white"
                 >
                   We help companies grow faster with innovative solutions,
                   expert consulting, and scalable business strategies.
@@ -107,18 +107,18 @@ const Hero = () => {
                 <motion.div
                   custom={0.3}
                   variants={fadeUp}
-                  className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-3 md:gap-4 text-sm sm:text-base text-white/100"
+                  className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-3 md:gap-4 text-sm sm:text-base text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]"
                 >
                   <div className="flex items-center">
-                    <span className="mr-2 text-[#38BDF8]">✔</span>
+                    <span className="mr-2 text-[#38BDF8] text-base sm:text-lg">✔</span>
                     <span>Scalable Solutions</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="mr-2 text-[#38BDF8]">✔</span>
+                    <span className="mr-2 text-[#38BDF8] text-base sm:text-lg">✔</span>
                     <span>Trusted Expertise</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="mr-2 text-[#38BDF8]">✔</span>
+                    <span className="mr-2 text-[#38BDF8] text-base sm:text-lg">✔</span>
                     <span>Data-driven Growth</span>
                   </div>
                 </motion.div>

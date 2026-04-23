@@ -110,7 +110,6 @@ const Polycheme = () => {
         </div>
       </section>
 
-      {/* REST OF THE SECTIONS REMAIN THE SAME */}
       {/* WHAT IS TYRE SEALANT */}
       <section className="py-24 px-6 md:px-16 max-w-6xl mx-auto">
         <motion.div
@@ -331,17 +330,15 @@ const Polycheme = () => {
         </div>
       </section>
 
-    
-
-      {/* FINAL CTA */}
-      <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-br from-slate-900 to-slate-800">
+      {/* FINAL CTA - NEW COLOR (Purple/Indigo theme to avoid footer color clash) */}
+      <section className="py-24 px-6 md:px-16 text-center bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
           className="max-w-4xl mx-auto"
         >
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center mx-auto mb-6 shadow-xl">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center mx-auto mb-6 shadow-xl">
             <FaShieldAlt className="text-white text-3xl" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -351,7 +348,7 @@ const Polycheme = () => {
             Get in touch with our experts today for a free consultation and demo.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300">
+            <button className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300">
               Contact Us
             </button>
             <a

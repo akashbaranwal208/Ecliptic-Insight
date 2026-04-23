@@ -80,9 +80,9 @@ const ProfessionalConsulting = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "500+", label: "Projects Delivered", icon: <FaRocket className="text-2xl" />, color: "text-blue-600" },
+              { value: "30+", label: "Projects Delivered", icon: <FaRocket className="text-2xl" />, color: "text-blue-600" },
               { value: "98%", label: "Client Satisfaction", icon: <FaUsers className="text-2xl" />, color: "text-emerald-600" },
-              { value: "50+", label: "Expert Team", icon: <FaTrophy className="text-2xl" />, color: "text-amber-600" },
+              { value: "10+", label: "Expert Team", icon: <FaTrophy className="text-2xl" />, color: "text-amber-600" },
               { value: "24/7", label: "Support Available", icon: <FaClock className="text-2xl" />, color: "text-purple-600" },
             ].map((item, i) => (
               <motion.div

@@ -88,10 +88,10 @@ const Navbar = () => {
       link: "/services",
       showExplore: false,
       links: [
-        { name: "Recruitment Consulting", path: "/recruitment" },
-        { name: "Marketing Consulting", path: "/professional" },
         { name: "Business Analytics", path: "/business-consulting" },
+        { name: "Marketing Consulting", path: "/professional" },
         { name: "Web Development", path: "/web-development" },
+        { name: "Recruitment Consulting", path: "/recruitment" },
       ],
     },
     brands: {

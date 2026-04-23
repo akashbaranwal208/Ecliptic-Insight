@@ -61,8 +61,8 @@ const services = [
 ];
 
 const stats = [
-  { value: "50+", label: "Projects Completed", icon: <FaTrophy className="text-3xl" />, color: "from-yellow-500 to-orange-500" },
-  { value: "30+", label: "Happy Clients", icon: <FaSmile className="text-3xl" />, color: "from-green-500 to-emerald-500" },
+  { value: "30+", label: "Projects Completed", icon: <FaTrophy className="text-3xl" />, color: "from-yellow-500 to-orange-500" },
+  { value: "100+", label: "Happy Clients", icon: <FaSmile className="text-3xl" />, color: "from-green-500 to-emerald-500" },
   { value: "5+", label: "Years Experience", icon: <FaClock className="text-3xl" />, color: "from-blue-500 to-cyan-500" },
   { value: "95%", label: "Success Rate", icon: <FaAward className="text-3xl" />, color: "from-purple-500 to-pink-500" },
 ];
