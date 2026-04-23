@@ -21,7 +21,7 @@ const Login = () => {
         }
       );
 
-      const { token, role ,name } = res.data;
+      const { token, role, name } = res.data;
 
       localStorage.setItem("token", token);
       localStorage.setItem("role", role);
@@ -42,36 +42,52 @@ const Login = () => {
 
   return (
     <AuthLayout title="Sign In" subtitle="Welcome back!">
-      <form onSubmit={handleSubmit} className="space-y-4" autoComplete="off">
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5" autoComplete="off">
+        
+        <div>
+          <label className="block text-sm font-medium text-[#0F172A] mb-1.5 sm:mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition text-sm sm:text-base"
+            required
+          />
+        </div>
 
-        <input
-          type="email"
-          placeholder="Enter email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-4 py-2 border rounded-xl"
-          required
-        />
+        <div>
+          <label className="block text-sm font-medium text-[#0F172A] mb-1.5 sm:mb-2">
+            Password
+          </label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full px-4 py-2.5 sm:py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition text-sm sm:text-base"
+            required
+          />
+        </div>
 
-        <input
-          type="password"
-          placeholder="Enter password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full px-4 py-2 border rounded-xl"
-          required
-        />
+        <div className="flex justify-end">
+          <Link to="/" className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 transition">
+            Forgot password?
+          </Link>
+        </div>
 
         <button
           type="submit"
-          className="w-full py-2 bg-blue-600 text-white rounded-xl"
+          className="w-full py-2.5 sm:py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-[1.02] text-sm sm:text-base"
         >
           Login
         </button>
 
-        <p className="text-center text-sm">
+        <p className="text-center text-xs sm:text-sm text-[#64748B] pt-2">
           Don't have an account?{" "}
-          <Link to="/signup" className="text-blue-600">
+          <Link to="/signup" className="text-blue-600 hover:text-blue-700 transition font-medium">
             Signup
           </Link>
         </p>
