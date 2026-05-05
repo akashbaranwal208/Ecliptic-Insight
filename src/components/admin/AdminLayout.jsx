@@ -10,7 +10,7 @@ const AdminLayout = () => {
   };
 
   return (
-    <div className="flex pt-20">
+    <div className="flex pt-20 md:pt-24 lg:pt-28">
       <AdminSidebar />
 
       <div className="ml-64 w-full min-h-screen bg-gray-100">
@@ -23,7 +23,6 @@ const AdminLayout = () => {
             <span className="text-sm text-gray-600">
               {name}
             </span>
-
           </div>
         </div>
 

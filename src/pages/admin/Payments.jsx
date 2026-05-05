@@ -14,7 +14,7 @@ const AdminPayments = () => {
 
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/admin/payments",
+          "http://localhost:5001/api/admin/payments",
           {
             headers: {
               Authorization: `Bearer ${token}`,

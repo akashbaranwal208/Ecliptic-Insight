@@ -22,7 +22,7 @@ const Employees = () => {
 
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/admin/employees",
+          "http://localhost:5001/api/admin/employees",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -57,7 +57,7 @@ const Employees = () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/admin/user/${id}`,
+        `http://localhost:5001/api/admin/user/${id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -86,7 +86,7 @@ const Employees = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/admin/user/${editingUser}`,
+        `http://localhost:5001/api/admin/user/${editingUser}`,
         formData,
         {
           headers: { Authorization: `Bearer ${token}` },

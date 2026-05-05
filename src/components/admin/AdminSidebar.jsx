@@ -12,7 +12,7 @@ const AdminSidebar = () => {
   ];
 
   return (
-    <div className="w-64 h-[calc(100vh-80px)] bg-[#0B1320] text-white fixed left-0 top-20 p-6">
+    <div className="w-64 h-[calc(100vh-80px)] md:h-[calc(100vh-96px)] lg:h-[calc(100vh-112px)] bg-[#0B1320] text-white fixed left-0 top-20 md:top-24 lg:top-28 overflow-y-auto p-6">
       <h1 className="text-lg font-semibold mb-8">Admin Panel</h1>
 
       <ul className="space-y-3">

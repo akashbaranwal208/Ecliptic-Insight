@@ -119,7 +119,7 @@ const Services = () => {
       {/* HEADING */}
       <div className="text-center mb-24">
         <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A]">
-          Our Core Services
+          Our Core Businesses
         </h2>
         <p className="text-[#64748B] mt-5 text-lg">
           Delivering innovative solutions across industries

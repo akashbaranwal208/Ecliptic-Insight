@@ -71,6 +71,7 @@ export const login = async (req, res) => {
       {
         id: user._id,
         name: user.fullName, // 🔥 IMPORTANT FIX
+        email: user.email,   // ✅ ADD THIS
         role: user.role,
       },
       "secretKey", // ✅ KEEP SAME

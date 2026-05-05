@@ -20,6 +20,7 @@ import VisionaryDynamics from "./pages/brands/VisionaryDynamics";
 import Archi from "./pages/brands/Archi";
 import WebDevelopment from "./pages/WebDevelopment";
 import ScrollToTop from "./components/ScrollToTop";
+import EmployeeLayout from "./components/dashboard/EmployeeLayout";
 
 
 // CLIENT DASHBOARD
@@ -91,10 +92,12 @@ function App() {
           path="/employee-dashboard"
           element={
             <ProtectedRoute allowedRoles={["employee"]}>
-              <EmployeeDashboard />
+              <EmployeeLayout />
             </ProtectedRoute>
           }
-        />
+        >
+          <Route index element={<EmployeeDashboard />} />
+          </Route>
 
         {/* CLIENT DASHBOARD */}
         <Route
